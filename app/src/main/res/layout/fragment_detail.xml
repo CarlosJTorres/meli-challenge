@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.module.detail.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!-- Estado del producto: NUEVO|USADO -->
+        <TextView
+            android:id="@+id/fragment_detail_tv_estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            tools:text="Usado"/>
+
+        <!-- Título del producto -->
+        <TextView
+            android:id="@+id/fragment_detail_tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Titulo lorem ipsum de producto muy productivo para la productividad máxima de la prudcción nacional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_detail_tv_estado"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <!-- ToDo: remove -->
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/fragment_detail_iv_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_detail_tv_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <!-- Imágenes del producto (Slider)-->
+        <ar.com.pensa.meli.technicalchallenge.ui.widget.ImageSliderView
+            android:id="@+id/fragment_detail_isv_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_detail_iv_image"
+            android:layout_margin="0dp"/>
+
+
+        <!-- Precio del producto -->
+        <TextView
+            android:id="@+id/fragment_detail_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_detail_isv_images"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            tools:text="$ 40.000"/>
+
+
+        <!-- Botón de comprar -->
+        <Button
+            android:id="@+id/fragment_detail_b_buy"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_detail_tv_price"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/comprar_ahora"
+            android:textAllCaps="false"/>
+
+        <!-- Botón de carrito (...) -->
+        <Button
+            android:id="@+id/fragment_detail_b_to_car"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_detail_b_buy"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/agregar_al_carrito"
+            android:backgroundTint="@color/colorAccentLess"
+            android:textColor="@color/purple_500"
+            android:textAllCaps="false"/>
+
+        <!-- Descripción (Título) -->
+        <TextView
+            android:id="@+id/fragment_detail_tv_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_detail_b_to_car"
+            android:layout_margin="10dp"
+            android:text="@string/fragment_detail_descripcion"
+            android:textStyle="bold"
+            android:textSize="19sp"/>
+
+        <!-- Descripción (Valor)-->
+        <TextView
+            android:id="@+id/fragment_detail_tv_description_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_detail_tv_description_title"
+            android:layout_margin="10dp"
+            tools:text="Este producto es muy bueno porque es muy productivo para la productividad"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

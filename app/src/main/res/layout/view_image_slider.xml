@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <!-- View para  -->
+    <androidx.viewpager.widget.ViewPager
+        android:layout_gravity="center"
+        android:id="@+id/item_image_slider_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/item_image_slider_pb_loading"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminateTint="@color/colorAccent"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Technical Challenge</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="et_buscar_en_mercadolibre">Buscar en MercadoLibre</string>
+    <string name="fragment_detail_descripcion">Descripción</string>
+    <string name="agregar_al_carrito">Agregar al carrito</string>
+    <string name="comprar_ahora">Comprar Ahora</string>
+</resources>
